@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+
+        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+
+<link rel="stylesheet" href="socials.css">
+<link rel="stylesheet" href="slider.css">
+<link rel="stylesheet" href="slider.js">
+<title>LMCHOLEWA</title>
+</head>
+
+<body>
+<header>
+	<div class="left">
+		<div class="logo-top">
+			<a href="LMCHOLEWA.html"><img src="logo.png" class="logo"></a>	
+		</div>
+		<div class="left-text">
+			<h1 class="left-firmName" style="text-align: left; font-size: 12px; font-family: sans-serif;">Pracownia Projektowa Łukasz Cholewa
+			</h1>
+		</div>
+	</div>
+	<div class="right-text">
+		<h1 style=" text-align: right; font-size: 14px; font-family: sans-serif;">
+			<a href="mailto:l.m.cholewa@gmail.com" target="_blank">L.M.Cholewa@gmail.com</a>
+		</h1>
+		<h1 id="mobile-number" style="text-align: right; font-size: 14px; font-family: sans-serif;"> +48 502537823
+		</h1> 
+		<h1 id="address" style="text-align: right; font-size: 14px; font-family: sans-serif;">ul. Francuska 22 lok.9, 03-906 Warszawa
+		</h1>
+	</div>	
+</header>
+<div class="columns" style="height: 0px; margin-top: 0px;">
+  	
+  	<div class="column" style="border-top:5px solid black; height: 0px;">
+	</div>
+  	
+</div>
+<div class="columns">	
+	<div class="slideshow-container"> 		
+  		<div class="column" >
+			<div class="mySlides fade">
+  				<div class="numbertext">1 / 8
+  				</div>
+  				<img src="narutowicza001.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+  				<div class="numbertext">2 / 8
+  				</div>
+  				<img src="narutowicza002.jpg" style="width:100%">	
+			</div>
+			<div class="mySlides fade">
+  				<div class="numbertext">3 / 8
+  				</div>
+  				<img src="narutowicza003.jpg" style="width:100%">
+			</div>
+      <div class="mySlides fade">
+          <div class="numbertext">4 / 8
+          </div>
+          <img src="narutowicza004.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+          <div class="numbertext">5 / 8
+          </div>
+          <img src="narutowicza005.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+          <div class="numbertext">6 / 8
+          </div>
+          <img src="narutowicza006.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+          <div class="numbertext">7 / 8
+          </div>
+          <img src="narutowicza007.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+          <div class="numbertext">8 / 8
+          </div>
+          <img src="narutowicza008.jpg" style="width:100%">
+      </div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	
+		<div class="dots" style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1)"></span> 
+  		<span class="dot" onclick="currentSlide(2)"></span> 
+  		<span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span> 
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span> 
+		</div>
+	</div>
+		</div>
+</div>
+<div class="columns" style="height: 0px;">
+  		<div class="column" style="border-top:5px solid black; height: 0px;">
+		</div>  		
+</div>
+<div class="columns">
+  	<div class="column"  >
+  	    <span style="font-size: 12px; font-family: sans-serif;">
+  	Copyright © 2019 Pracownia Projektowa Łukasz Cholewa. Wszelkie prawa zastrzeżone.
+  		</span>
+	</div>
+	<div class="column" style="text-align: right; margin-top: 5px;">
+  		<a href="#" class="is-icon fa fa-facebook"></a>
+  	</div>
+</div>
+    <script type="text/javascript">
+    	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+    </script>		
+</body>
+</html>
